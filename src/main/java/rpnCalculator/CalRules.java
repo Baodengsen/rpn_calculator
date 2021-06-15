@@ -1,4 +1,4 @@
-package myCalculator;
+package rpnCalculator;
 
 import java.util.ArrayList;
 import java.util.List;

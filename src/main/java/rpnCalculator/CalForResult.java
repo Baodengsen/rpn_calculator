@@ -1,10 +1,11 @@
-package myCalculator;
+package rpnCalculator;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
+
 
 public class CalForResult {
     private Stack<Double> numbers = new Stack<Double>(); // 操作数栈
