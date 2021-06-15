@@ -9,9 +9,9 @@ import java.util.Stack;
 public class CalForResult {
     private Stack<Double> numbers = new Stack<Double>(); // 操作数栈
     private Stack<List<Double>> numlogs = new Stack<>(); // 操作数栈的日志栈,用来存放操作数栈的历史记录
+
     /**
-     * 该方法对RPN表达式进行计算
-     *
+     * 对RPN表达式进行计算
      * @param rpn 为用户输入的RPN表达式
      */
     public void calRpnExpression(String rpn) throws Exception {
@@ -53,8 +53,7 @@ public class CalForResult {
     }
 
     /**
-     * 该方法将字符串转换为数字类型Double
-     *
+     * 将字符串转换为数字类型Double
      * @param str
      */
     private Double strToDigit(String str) {
@@ -67,8 +66,7 @@ public class CalForResult {
     }
 
     /**
-     * 该方法获取栈中数据，将其存在List集合中
-     *
+     * 获取栈中数据，将其存在List集合中
      * @param stk
      */
     public List<Double> getStack(Stack<Double> stk) {
@@ -80,8 +78,7 @@ public class CalForResult {
     }
 
     /**
-     * 该方法将栈中的数据显示出来，从底层开始
-     *
+     * 将栈中的数据显示出来，从底层开始
      * @param stk
      */
     public void displayStack(Stack<Double> stk) {
@@ -97,8 +94,7 @@ public class CalForResult {
     }
 
     /**
-     * 该方法设置运算结果的显示格式，最多显示10位精度
-     *
+     * 设置运算结果的显示格式，最多显示10位精度
      * @param value  运算结果
      */
     public String outputFormat(double value) {
@@ -107,11 +103,15 @@ public class CalForResult {
         return output;
     }
 
+    /**
+     * rpn计算器启动函数
+     * @param args
+     */
     public static void main(String[] args) {
         CalForResult cf = new CalForResult();
         try {
             while (true) {
-                System.out.println("请输入逆波兰表达式：");
+                System.out.println("Please input rpn expression：");
                 Scanner scan = new Scanner(System.in);
                 String rpn = scan.nextLine();
                 cf.calRpnExpression(rpn);

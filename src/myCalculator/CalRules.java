@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Stack;
 
 public class CalRules {
+
     /**
-     * 该方法封装了一元运算符计算法则,可在该方法中增加操作符功能
-     *
+     * 封装一元运算符计算法则,可在该方法中增加操作符功能
      * @param stk1 操作符栈
      * @param stk1 日志栈
      * @param opt  操作符
@@ -25,8 +25,7 @@ public class CalRules {
     }
 
     /**
-     * 该方法封装了二元运算符计算法则，可在此方法中增加更多操作符，实现扩展。
-     *
+     * 封装二元运算符计算法则，可在此方法中增加更多操作符，实现扩展。
      * @param stk1 操作符栈
      * @param stk1 日志栈
      * @param opt  操作符
@@ -57,8 +56,7 @@ public class CalRules {
     }
 
     /**
-     * 该方法封装了功能操作符undo、clear的计算法则
-     *
+     * 封装功能操作符undo、clear的计算法则
      * @param stk1 操作数栈
      * @param stk2 日志栈
      * @param opt  操作符
@@ -96,7 +94,6 @@ public class CalRules {
 
     /**
      * 除法计算法则
-     *
      * @param a 操作数1
      * @param b 操作数2
      */
@@ -109,7 +106,6 @@ public class CalRules {
 
     /**
      * 开平方计算法则
-     *
      * @param f
      */
     private double sqrt(double f) throws Exception {
@@ -122,7 +118,6 @@ public class CalRules {
 
     /**
      * 该方法获取栈中数据，将其存在List集合中
-     *
      * @param stk
      */
     public List<Double> getStack(Stack<Double> stk) {
